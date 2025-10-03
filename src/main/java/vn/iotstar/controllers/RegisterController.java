@@ -34,7 +34,6 @@ public class RegisterController extends HttpServlet {
             return;
         }
         
-        // Nếu chưa đăng nhập, hiển thị trang đăng ký
         RequestDispatcher dispatcher = req.getRequestDispatcher("/views/register.jsp");
         dispatcher.forward(req, resp);
     }
@@ -44,7 +43,6 @@ public class RegisterController extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // Set encoding UTF-8 cho request để đọc đúng tiếng Việt
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
 

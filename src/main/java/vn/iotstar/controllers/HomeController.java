@@ -1,6 +1,5 @@
 package vn.iotstar.controllers;
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -20,7 +19,7 @@ public class HomeController extends HttpServlet {
         String name = "phong";
 
         req.setAttribute("name", name); 
-        RequestDispatcher rd = req.getRequestDispatcher("/views/home.jsp"); 
+        RequestDispatcher rd = req.getRequestDispatcher("/views/web/home.jsp"); 
         rd.forward(req, resp); 
     }
 

@@ -7,8 +7,7 @@ public interface UserService {
 	UserModel login(String username, String password);
 	UserModel findByUserName(String username);
 	
-	// --- Bổ sung các phương thức mới cho chức năng đăng ký ---
-	void insert(UserModel user); // Dùng UserModel cho nhất quán với project của bạn
+	void insert(UserModel user);
 
 	boolean register(String email, String password, String username, String fullname, String phone);
 
